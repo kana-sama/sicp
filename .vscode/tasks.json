@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "command": "sh",
+  "isShellCommand": true,
+  "args": [
+    "-c",
+    "scheme --quiet < ${file}"
+  ],
+  "showOutput": "always"
+}
