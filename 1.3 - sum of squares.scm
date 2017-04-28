@@ -1,5 +1,4 @@
-(define (square x)
-  (* x x))
+(load "utils")
 
 (define (sum-of-squares a b c)
   (let ((values (sort (list a b c) >)))

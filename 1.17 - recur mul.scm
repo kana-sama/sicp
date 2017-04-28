@@ -1,6 +1,4 @@
-(define (half x) (/ x 2))
-(define (double x) (* x 2))
-(define (dec x) (- x 1))
+(load "utils")
 
 (define (mul a b)
   (cond ((zero? b) 0)

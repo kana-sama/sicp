@@ -1,5 +1,4 @@
-(define (dec x)
-  (- x 1))
+(load "utils")
 
 (define (base? x y)
   (= x y 0))

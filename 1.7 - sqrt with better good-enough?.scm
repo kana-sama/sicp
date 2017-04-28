@@ -1,11 +1,4 @@
-(define (square x)
-  (* x x))
-
-(define (average a b)
-  (/ (+ a b) 2))
-
-(define (delta a b)
-  (abs (- a b)))
+(load "utils")
 
 (define (improve guess x)
   (average guess (/ x guess)))

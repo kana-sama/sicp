@@ -1,0 +1,7 @@
+(define (square x) (* x x))
+(define (inc x) (+ x 1))
+(define (dec x) (- x 1))
+(define (half x) (/ x 2))
+(define (double x) (* x 2))
+(define (average x y) (/ (+ x y) 2))
+(define (delta x y) (abs (- x y)))
