@@ -5,3 +5,11 @@
 (define (double x) (* x 2))
 (define (average x y) (/ (+ x y) 2))
 (define (delta x y) (abs (- x y)))
+(define (divides? a b) (zero? (remainder a b)))
+(define (not-zero? x) (not (zero? x)))
+
+(define (measure fn #!rest args)
+  (let ((start (runtime)))
+    (let ((result (apply fn args)))
+      (let ((finish (runtime)))
+        (list result (- finish start))))))
