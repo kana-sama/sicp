@@ -24,5 +24,3 @@
               (write-line measurement)
               (loop (inc i) (dec count)))
             (loop (inc i) count)))))))
-
-(prime?-bench 1000)
