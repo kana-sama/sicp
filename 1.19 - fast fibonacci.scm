@@ -30,7 +30,6 @@
 
 (define (fib n)
   (let loop ((a 1) (b 0) (p 0) (q 1) (n n))
-    (write-line n)
     (cond ((zero? n) b)
           ((even? n) (loop a b (next-p p q) (next-q p q) (half n)))
           (else (loop (shift-a a b p q)
