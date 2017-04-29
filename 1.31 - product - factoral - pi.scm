@@ -7,6 +7,9 @@
           (else (loop (next i)
                       (reducer acc (mapper i)))))))
 
+(define (sum fn next a b)
+  (map-reduce-range fn + next 0 a b))
+
 (define (product fn next a b)
   (map-reduce-range fn * next 1 a b))
 
