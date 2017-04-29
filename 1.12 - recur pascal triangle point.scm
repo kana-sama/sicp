@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (base? x y)
   (= x y 0))
 

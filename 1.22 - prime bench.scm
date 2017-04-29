@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (smallest-divisor n)
   (let loop ((n n) (test-divisor 2))
     (cond ((> (square test-divisor) n) n)

@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (mul a b)
   (let loop ((extra 0) (result a) (factor b))
     (cond ((zero? factor) extra)

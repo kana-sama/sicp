@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (sum fn next a b)
   (cond ((> a b) 0)
         (else (+ (fn a)

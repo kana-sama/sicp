@@ -32,8 +32,8 @@
         (list result (- finish start))))))
 
 (define (print #!rest args)
-  (map
-    (lambda ( x)
+  (for-each
+    (lambda (x)
       (write x)
       (write-string " "))
     args)

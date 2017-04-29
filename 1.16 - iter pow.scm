@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (pow x n)
   (let loop ((extra 1) (result x) (power n))
     (cond ((zero? power) extra)

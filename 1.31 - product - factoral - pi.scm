@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (map-reduce-range mapper reducer next init a b)
   (let loop ((i a)
              (acc init))
@@ -16,8 +14,6 @@
 (define (factorial n)
   (product * inc 2 n))
 
-(print (factorial 5))
-
 (define pi
   (* 4 (product
          (lambda (i)
@@ -27,4 +23,6 @@
          3.0
          100000)))
 
-(write pi)
+(print
+  (factorial 5)
+  pi)

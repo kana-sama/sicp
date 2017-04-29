@@ -1,5 +1,3 @@
-(load "utils")
-
 ; Tpq([a, b]) = [bq + aq + ap, bp + aq]
 ; Tp'q' = Tpq . Tpq
 ;

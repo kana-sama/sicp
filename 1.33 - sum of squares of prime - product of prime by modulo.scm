@@ -1,4 +1,3 @@
-(load "utils")
 (load "algo/gcd")
 (load "algo/prime")
 
@@ -28,5 +27,6 @@
     1
     n))
 
-(print (sum-of-squares-of-primes 1 10))
-(print (prod-of-prime-by-modulo 5))
+(print
+  (sum-of-squares-of-primes 1 10)
+  (prod-of-prime-by-modulo 5))

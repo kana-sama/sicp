@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (next-divisor divisor)
   (if (= divisor 2)
     3

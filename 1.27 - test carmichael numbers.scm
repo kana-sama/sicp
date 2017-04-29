@@ -1,5 +1,3 @@
-(load "utils")
-
 (define (pow-mod base exp m)
   (cond ((zero? exp) 1)
         ((even? exp)

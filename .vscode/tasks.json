@@ -4,7 +4,7 @@
   "isShellCommand": true,
   "args": [
     "-c",
-    "scheme --quiet < '${file}'"
+    "cat core.scm '${file}' | scheme --quiet"
   ],
   "showOutput": "always"
 }
