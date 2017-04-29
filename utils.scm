@@ -5,6 +5,10 @@
   (lambda (#!rest args2)
     (apply f (append args1 args2))))
 
+(define (compose #!rest fns)
+  (lambda (x)
+    (fold-right (lambda (f x) (f x)) x fns)))
+
 (define (square x) (* x x))
 (define (cube x) (* x x x))
 
