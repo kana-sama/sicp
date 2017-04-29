@@ -19,8 +19,12 @@
 (define (double x) (* x 2))
 (define (reciprocal x) (/ 1.0 x))
 
-(define (average x y) (/ (+ x y) 2))
 (define (delta x y) (abs (- x y)))
+
+(define (sum seq) (fold + 0 seq))
+(define (average #!rest args)
+  (/ (sum args)
+     (length args)))
 
 (define (divides? a b) (zero? (remainder a b)))
 (define (not-zero? x) (not (zero? x)))
