@@ -23,6 +23,7 @@
 
 (define (divides? a b) (zero? (remainder a b)))
 (define (not-zero? x) (not (zero? x)))
+(define (one? x) (= x 1))
 
 (define (measure fn #!rest args)
   (let ((start (runtime)))
