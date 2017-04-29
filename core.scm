@@ -35,8 +35,11 @@
 (define (print #!rest args)
   (for-each
     (lambda (x)
-      (write x)
-      (write-string " "))
+      (if (string? x)
+        (write-string x)
+        (begin
+          (write x)
+          (write-string " "))))
     args)
   (newline))
 
