@@ -1,9 +1,4 @@
-(define (fixed-point f first-guess)
-  (let loop ((guess first-guess))
-    (let ((next-guess (f guess)))
-      (if (close? next-guess guess 0.00001)
-        next-guess
-        (loop next-guess)))))
+(load "1.35 - search golden ratio by fixed point.scm")
 
 (define dx 0.0001)
 (define (deriv g)
