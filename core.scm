@@ -17,6 +17,7 @@
 (define (half x) (/ x 2))
 (define (third x) (/ x 3))
 (define (double x) (* x 2))
+(define (reciprocal x) (/ 1.0 x))
 
 (define (average x y) (/ (+ x y) 2))
 (define (delta x y) (abs (- x y)))
@@ -38,3 +39,6 @@
       (write-string " "))
     args)
   (newline))
+
+(define (close? a b precision)
+  (<= (delta a b) precision))
