@@ -1,15 +1,16 @@
 (define (cont-frac n d k)
-  (cond ((zero? k) 0)
-        (else (/ (n k)
-                 (+ (d k)
-                    (cont-frac n d (dec k)))))))
+  (if (zero? k)
+    0
+    (/ (n k)
+       (+ (d k)
+          (cont-frac n d (dec k))))))
 
 (define (cont-frac* n d k)
   (let loop ((result 0) (k k))
-    (cond ((zero? k) result)
-          (else (loop (/ (n k)
-                         (+ (d k) result))
-                      (dec k))))))
+    (if (zero? k)
+      result
+      (loop (/ (n k) (+ (d k) result))
+            (dec k)))))
 
 (define (phi-with-cont-frac fn)
   (reciprocal
