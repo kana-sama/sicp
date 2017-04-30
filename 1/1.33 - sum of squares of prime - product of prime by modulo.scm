@@ -1,4 +1,3 @@
-(load "algo/gcd")
 (load "algo/prime")
 
 (define (filter-map-reduce-range pred? mapper reducer next init a b)

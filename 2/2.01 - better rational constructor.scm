@@ -1,5 +1,3 @@
-(load "algo/gcd")
-
 (define (make-rat n d)
   (let ((k (* (gcd n d)
               (if (negative? d) -1 1))))
