@@ -9,4 +9,4 @@ Solutions are grouped by their chapters.
 - `algo/*` - algorithms
 - `.vscode/tasks.js` includes build script for vscode
 
-| mit-scheme package is required
+### mit-scheme package is required
