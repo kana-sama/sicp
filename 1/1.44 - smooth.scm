@@ -1,4 +1,4 @@
-(load "1.43 - repeated self-compose.scm")
+(load "1/1.43 - repeated self-compose.scm")
 
 (define dx 0.0001)
 (define (smooth f)

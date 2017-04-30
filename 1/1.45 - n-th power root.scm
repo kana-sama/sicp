@@ -1,5 +1,5 @@
-(load "1.35 - search golden ratio by fixed point.scm")
-(load "1.43 - repeated self-compose.scm")
+(load "1/1.35 - search golden ratio by fixed point.scm")
+(load "1/1.43 - repeated self-compose.scm")
 
 (define (average-damp f)
   (lambda (x)

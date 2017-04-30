@@ -1,4 +1,4 @@
-(load "1.35 - search golden ratio by fixed point.scm")
+(load "1/1.35 - search golden ratio by fixed point.scm")
 
 (define dx 0.0001)
 (define (deriv g)
