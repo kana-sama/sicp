@@ -4,4 +4,4 @@
       result
       (loop (cdr l) (cons (car l) result)))))
 
-(print (reverse  (list 1 2 3)))
+(print (reverse (list 1 2 3)))

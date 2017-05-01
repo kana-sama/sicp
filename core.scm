@@ -1,11 +1,11 @@
 (define (identity x) x)
 (define (always x) (lambda (y) x))
 
-(define (partial f #!rest args1)
+(define (partial f . args1)
   (lambda (#!rest args2)
     (apply f (append args1 args2))))
 
-(define (compose #!rest fns)
+(define (compose . fns)
   (lambda (x)
     (fold-right (lambda (f x) (f x)) x fns)))
 
@@ -22,7 +22,7 @@
 (define (delta x y) (abs (- x y)))
 
 (define (sum seq) (fold + 0 seq))
-(define (average #!rest args)
+(define (average . args)
   (/ (sum args)
      (length args)))
 
@@ -30,13 +30,13 @@
 (define (not-zero? x) (not (zero? x)))
 (define (one? x) (= x 1))
 
-(define (measure fn #!rest args)
+(define (measure fn . args)
   (let ((start (runtime)))
     (let ((result (apply fn args)))
       (let ((finish (runtime)))
         (list result (- finish start))))))
 
-(define (print #!rest args)
+(define (print . args)
   (for-each
     (lambda (x)
       (if (string? x)
