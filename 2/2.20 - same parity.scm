@@ -1,0 +1,10 @@
+(define (same-parity x . seq)
+  (let ((parity (even? x)))
+    (let loop ((result (list x))
+               (seq seq))
+      (cond ((null? seq) (reverse result))
+            ((boolean=? parity (even? (car seq)))
+             (loop (cons (car seq) result) (cdr seq)))
+            (else (loop result (cdr seq)))))))
+
+(print (same-parity 2 3 4 5 6 7))
