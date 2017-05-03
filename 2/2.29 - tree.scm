@@ -40,7 +40,8 @@
     (and (balanced? (left-structure structure))
          (balanced? (right-structure structure))
          (= (torque (left-branch structure))
-            (torque (right-branch structure))))))
+            (torque (right-branch structure))))
+    true))
 
 (define x
   (make-mobile
