@@ -49,3 +49,9 @@
 
 (define (close? a b precision)
   (<= (delta a b) precision))
+
+(define (any? pred seq)
+  (fold (lambda (x result) (or result (pred x))) false seq))
+
+(define (all? pred seq)
+  (fold (lambda (x result) (and result (pred x))) true seq))
