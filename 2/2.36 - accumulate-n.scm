@@ -1,0 +1,10 @@
+(define (fold-right-n f init seqs)
+  (if (null? (car seqs))
+    '()
+    (cons (fold-right f init (map car seqs))
+          (fold-right-n f init (map cdr seqs)))))
+
+(print (fold-right-n + 0 (list (list 1 2 3)
+                               (list 4 5 6)
+                               (list 7 8 9)
+                               (list 10 11 12))))
