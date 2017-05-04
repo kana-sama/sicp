@@ -1,6 +1,10 @@
 (define (identity x) x)
 (define (always x) (lambda (y) x))
 
+(define (flip f)
+  (lambda args
+    (apply f (reverse args))))
+
 (define (partial f . args1)
   (lambda (#!rest args2)
     (apply f (append args1 args2))))
